@@ -7,3 +7,29 @@ git commit -m "something was modified"
 #then push
 git pull origin master
 git push origin master
+
+#merge a branch
+git checkout master -> checkout to master branch
+git pull origin master -> get new changes that master branch has got
+git branch —merged -> list all branches merged for master branch
+git merge some-branch -> merge our new branch ready to be merged to master branch
+git push origin master -> push our local master branch to our remote origin master Brach
+
+#deleting a branch
+git branch -—merged -> list all branch merged for master branch
+git branch -d some-branch -> delete specified branch locally
+git branch -a -> list all branch of master branch
+git push origin —-delete some-branch -> delete remote branch
+
+#fix a messed commit only if you noticed it right away
+git commit -m “This is a wrong message”
+git commit —-amend -m “This is the message I wanted to write”
+
+#if you forgot to add a file
+git commit —-amend
+
+#if you want to see all git logs
+git log
+
+#if you accidentally commit some changes to a different branch, point those commits to
+#your target branch
