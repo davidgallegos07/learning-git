@@ -33,3 +33,6 @@ git log
 
 #if you accidentally commit some changes to a different branch, point those commits to
 #your target branch
+
+#clone a repository from a specific branch
+git clone -b <branch> <remote_repo>
